@@ -1,0 +1,91 @@
+.navbar {
+    background: #1a1a2e;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.link {
+    color: #aaa;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+.link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.active {
+    color: #fff;
+    background: rgba(99, 102, 241, 0.2);
+}
+
+.userName {
+    color: #818cf8;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+.logoutBtn {
+    color: #ef4444;
+    background: transparent;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.logoutBtn:hover {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.loginBtn {
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.flaggedLink {
+    color: #ef4444 !important;
+}
+
+.flaggedLink:hover {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.flaggedLink.active {
+    background: rgba(239, 68, 68, 0.2);
+}

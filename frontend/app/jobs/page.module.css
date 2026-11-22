@@ -1,0 +1,492 @@
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(34, 211, 238, 0.05) 100%);
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #888;
+    font-size: 16px;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.searchBox {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 16px;
+    background: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.searchBox:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+.filterSelect {
+    padding: 12px 16px;
+    background: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 13px;
+    min-width: 130px;
+    cursor: pointer;
+}
+
+.sortSelect {
+    padding: 12px 16px;
+    background: #1a1a2e;
+    border: 1px solid #22d3ee;
+    border-radius: 8px;
+    color: #22d3ee;
+    font-size: 13px;
+    min-width: 160px;
+    cursor: pointer;
+}
+
+.statsBar {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+.statsBar strong {
+    color: #22d3ee;
+}
+
+.jobsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.jobCard {
+    background: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.jobCard:hover {
+    transform: translateY(-4px);
+    border-color: #6366f1;
+}
+
+.jobCard h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.jobMeta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.jobMeta span {
+    color: #888;
+    font-size: 14px;
+}
+
+.jobDesc {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.jobFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+}
+
+.postedDate {
+    color: #666;
+    font-size: 13px;
+}
+
+.btnView {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btnView:hover {
+    background: #444;
+}
+
+.btnApply {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btnApply:hover {
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
+}
+
+.loading {
+    text-align: center;
+    padding: 60px;
+    color: #888;
+}
+
+.noJobs {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px;
+    color: #888;
+}
+
+.noJobs h3 {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.modalSection {
+    margin-bottom: 25px;
+}
+
+.modalSection h4 {
+    color: #22d3ee;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.modalSection p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.modalActions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Screening Questions Styles */
+.questionsSection {
+    margin-top: 20px;
+}
+
+.integrityNotice {
+    margin: 0 0 16px;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 9px;
+    padding: 10px 12px;
+    background: rgba(15, 23, 42, 0.55);
+    color: #cbd5e1;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.questionCard {
+    background: #0f0f0f;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.questionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.questionHeader span:first-child {
+    color: #818cf8;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.questionType {
+    background: rgba(99, 102, 241, 0.2);
+    color: #818cf8;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    text-transform: capitalize;
+}
+
+.questionText {
+    font-size: 15px;
+    color: #eee;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.option:hover {
+    border-color: #6366f1;
+}
+
+.option input[type="radio"] {
+    width: auto;
+    accent-color: #6366f1;
+}
+
+.option span {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.textAnswer {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.textAnswer:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+.noQuestions {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+}
+
+.btnApply:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Resume Upload Styles */
+.resumeSection {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.resumeUpload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fileInput {
+    display: none;
+}
+
+.fileLabel {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #1a1a2e;
+    border: 1px dashed #6366f1;
+    border-radius: 8px;
+    color: #818cf8;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex: 1;
+    text-align: center;
+}
+
+.fileLabel:hover {
+    background: rgba(99, 102, 241, 0.1);
+    border-style: solid;
+}
+
+.removeFile {
+    background: transparent;
+    border: none;
+    color: #ef4444;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Existing Resume Styles */
+.existingResume {
+    background: #0f0f0f;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.resumeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.resumeInfo span {
+    color: #22c55e;
+    font-weight: 500;
+}
+
+.resumeInfo small {
+    color: #666;
+    font-size: 12px;
+}
+
+.radioOption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.radioOption input[type="radio"] {
+    accent-color: #6366f1;
+}
+
+.radioOption:hover {
+    color: #fff;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+    padding: 20px;
+    background: #1a1a2e;
+    border-radius: 12px;
+    flex-wrap: wrap;
+}
+
+.pageBtn {
+    background: #0f0f0f;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.pageBtn:hover:not(:disabled) {
+    background: #6366f1;
+    border-color: #6366f1;
+}
+
+.pageBtn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pageNumbers {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pageNum {
+    background: transparent;
+    border: 1px solid #333;
+    color: #888;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.pageNum:hover {
+    color: #fff;
+    border-color: #6366f1;
+}
+
+.activePage {
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    border-color: #6366f1;
+    color: #fff;
+}
+
+.ellipsis {
+    color: #666;
+    padding: 0 5px;
+}
+
+.perPageSelect {
+    background: #0f0f0f;
+    border: 1px solid #333;
+    color: #888;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+}

@@ -1,0 +1,21 @@
+[Unit]
+Description=ResumeIQ Backend (FastAPI)
+After=network.target
+
+[Service]
+Type=simple
+User=resumeiq
+Group=resumeiq
+WorkingDirectory=/opt/resumeiq/backend
+EnvironmentFile=/opt/resumeiq/backend/.env
+Environment="PATH=/opt/resumeiq/backend/venv/bin"
+ExecStart=/opt/resumeiq/backend/venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000
+Restart=always
+RestartSec=5
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

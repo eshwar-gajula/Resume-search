@@ -1,0 +1,499 @@
+.header {
+    margin-bottom: 30px;
+}
+
+.header h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #888;
+}
+
+.flaggedLink {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 8px;
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.flaggedLink:hover {
+    background: rgba(239, 68, 68, 0.2);
+    transform: translateY(-1px);
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.searchBar,
+.bulkActions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 18px 0;
+}
+
+.searchBar input {
+    flex: 1 1 320px;
+    min-width: 220px;
+    padding: 11px 13px;
+    color: #fff;
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 8px;
+}
+
+.searchBar input:not(:first-child) {
+    flex: 1 1 120px;
+    max-width: 180px;
+}
+
+.searchBar select {
+    flex: 1 1 130px;
+    max-width: 190px;
+    padding: 11px 12px;
+    color: #fff;
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 8px;
+}
+
+.searchBar button,
+.bulkActions button,
+.identityActions button {
+    padding: 9px 13px;
+    color: #fff;
+    background: #312e81;
+    border: 1px solid #4f46e5;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.searchBar button:disabled,
+.bulkActions button:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+}
+
+.bulkActions {
+    justify-content: space-between;
+    color: #a1a1aa;
+}
+
+.selectCandidate,
+.identityActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #a1a1aa;
+    font-size: 13px;
+}
+
+.identityActions {
+    margin-bottom: 18px;
+}
+
+.filterBtn {
+    padding: 10px 20px;
+    background: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #888;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filterBtn:hover {
+    border-color: #6366f1;
+    color: #fff;
+}
+
+.filterBtn.active {
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    border-color: #6366f1;
+    color: #fff;
+}
+
+.appList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appCard {
+    background: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-color 0.2s;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.appCard:hover {
+    border-color: #6366f1;
+}
+
+.appMain h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.jobTitle {
+    color: #818cf8;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.appMeta {
+    display: flex;
+    gap: 20px;
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.matchScore {
+    color: #22d3ee;
+    font-size: 14px;
+}
+
+.matchScore strong {
+    color: #22c55e;
+}
+
+.appActions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.actionBtns {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.status {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.statusPending {
+    background: rgba(253, 186, 116, 0.2);
+    color: #fdba74;
+}
+
+.statusShortlisted {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.statusRejected {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.statusAccepted {
+    background: rgba(99, 102, 241, 0.2);
+    color: #818cf8;
+}
+
+.btnShortlist {
+    background: #22c55e;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btnAccept {
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btnReject {
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btnView {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btnPending {
+    background: #fdba74;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.loading,
+.empty {
+    text-align: center;
+    padding: 60px;
+    color: #888;
+}
+
+.empty h3 {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.modalSection {
+    margin-bottom: 25px;
+}
+
+.modalSection h4 {
+    color: #22d3ee;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.scoreBar {
+    background: #333;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.scoreProgress {
+    background: linear-gradient(90deg, #22c55e, #22d3ee);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.modalActions {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Social Links */
+.socialLinks {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.socialLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 14px;
+    background: #0f0f0f;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #818cf8;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.socialLink:hover {
+    background: #1a1a2e;
+    border-color: #6366f1;
+    color: #fff;
+}
+
+/* Benchmarks */
+.benchmarks {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.benchmarks h5 {
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.benchmarkGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.benchmarkItem {
+    background: #0f0f0f;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.benchmarkHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.benchmarkName {
+    color: #ccc;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.benchmarkScore {
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.benchmarkReason {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.overallAssessment {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    border-radius: 8px;
+}
+
+.overallAssessment h5 {
+    color: #22c55e;
+    margin-bottom: 8px;
+}
+
+.overallAssessment p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Skill Tags */
+.skillTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Originality Assessment */
+.originalityBox {
+    margin-top: 12px;
+    padding: 10px;
+    background: rgba(30, 30, 50, 0.5);
+    border: 1px solid #444;
+    border-radius: 6px;
+}
+
+.originalityHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.suspicionLevel {
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.suspicionNone {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.suspicionLow {
+    background: rgba(34, 211, 238, 0.2);
+    color: #22d3ee;
+}
+
+.suspicionMedium {
+    background: rgba(251, 191, 36, 0.2);
+    color: #fbbf24;
+}
+
+.suspicionHigh {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.originalityScore {
+    color: #888;
+    font-size: 12px;
+}
+
+.suspicionFlags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.flag {
+    background: rgba(251, 191, 36, 0.1);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    color: #fbbf24;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.originalityAssessment {
+    margin: 8px 0 0 0;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.4;
+}
